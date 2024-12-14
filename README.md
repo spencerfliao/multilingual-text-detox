@@ -1,12 +1,7 @@
-# Multilingual Text Detoxification (TextDetox) 2024
+# Multilingual Text Detoxification
 
-This project aims to detoxify text by transforming toxic content into non-toxic versions while preserving the original meaning as much as possible. Our approach focuses on handling multiple languages, with initial implementations for English and Russian.
-
-## Project Timeline
-
-- **February 1, 2024:** Data availability and run submissions open.
-- **May 6, 2024:** Deadline for run submissions; results announced.
-- **May 31, 2024:** Deadline for paper submissions.
+This project aims to address the challenge of online toxicity by transforming toxic comments into non-toxic ones while maintaining the original meaning. It involves the use of advanced natural language processing techniques and machine learning models to ensure content safety and inclusiveness in digital communication platforms.
+This repository contains the implementation of a multilingual text detoxification system developed as part of the TextDetox 2024 challenge. The system focuses on converting toxic text into non-toxic text while preserving the original content's meaning. The models handle multiple languages with a focus on English and Russian.
 
 ## Task Description
 
@@ -22,6 +17,34 @@ We utilize the official ParaDetox datasets for English and Russian, comprising p
 - **English Dataset:** 17,769 training pairs, 1,975 validation pairs.
 - **Russian Dataset:** 11,090 training pairs, 1,116 validation pairs.
 
+## File Structure
+
+- **data/**: Contains training, validation, and development datasets.
+  - `en_train_input.json`, `en_valid_input.json`, `ru_train_input.json`, `ru_valid_input.json`: Input data for training and validation.
+  - `en_train_gold.json`, `en_valid_gold.json`, `ru_train_gold.json`, `ru_valid_gold.json`: Gold standard detoxified outputs for training and validation.
+- **output/**: Stores the output from various model runs.
+  - `en_generated_detox_texts_f1.json`, `ru_generated_detox_texts_f1.json`: Outputs from the first fine-tuning iteration.
+  - `en_valid_output_gpt2_1.json`, `ru_valid_output_gpt2_1.json`: Validation outputs from the GPT-2 models.
+- **scripts/**: Scripts for training and evaluating models.
+  - `backtranslation_baseline.py`: Implements the baseline model using backtranslation.
+  - `finetune_baseline.py`: Script for fine-tuning the baseline models.
+  - `finetune_condBERT.py`, `gpt2.ipynb`: Scripts and notebooks for fine-tuning and evaluating CondBERT and GPT-2 models.
+  - `evaluate.py`: Script to evaluate outputs against the gold standard using specified metrics.
+
+## Setup
+
+To set up the project environment and install dependencies, run:
+
+```bash
+conda env create -f speech_sanitizers_env.yml
+conda activate textdetox
+```
+
+
+
+
+
+
 ## Evaluation Metrics
 
 Our evaluation framework includes:
@@ -36,16 +59,17 @@ We have implemented models using BART and T5 architectures for English and Russi
 ### Baseline Model
 
 - Utilizes backtranslation for detoxification.
-- [Model and training details](https://github.com/path/to/model_details)
+- To run the baseline model: `sh run_baseline.sh`
 
 ### Fine-tuned Models
 
-- Improved versions of baseline models with adjusted learning rates and epochs.
-- [Fine-tuning specifics](https://github.com/path/to/fine_tuning_details)
+- CondBERT and GPT-2 Models: Advanced models fine-tuned for better performance and accuracy in detoxifying texts.
+- For fine-tuning and generating outputs: `python scripts/finetune_baseline.py`
 
 ## Results
 
-Our models demonstrate a significant improvement in handling toxicity while retaining the content and grammatical correctness. Detailed performance metrics are available in the [results section](https://github.com/path/to/results).
+- Our models demonstrate a significant improvement in handling toxicity while retaining the content and grammatical correctness.
+- To evaluate model outputs: `python scripts/evaluate.py`
 
 ## Setup and Installation
 
@@ -53,3 +77,21 @@ Our models demonstrate a significant improvement in handling toxicity while reta
 git clone https://github.com/your-repository/TextDetox.git
 cd TextDetox
 pip install -r requirements.txt
+```
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Authors
+
+Minsi Lai
+Chenxin Wang
+Jingyi Liao
+Fangge Liao
+
+## Acknowledgments
+
+University of British Columbia
+CLEF 2024 Organizers
+All participants and contributors to the project.
