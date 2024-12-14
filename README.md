@@ -40,18 +40,6 @@ conda env create -f speech_sanitizers_env.yml
 conda activate textdetox
 ```
 
-
-
-
-
-
-## Evaluation Metrics
-
-Our evaluation framework includes:
-- **Style Transfer Accuracy (STA):** Measures non-toxicity levels of transformed text.
-- **Content Preservation (SIM):** Assesses semantic similarity between original and transformed text.
-- **Character n-gram F-score (ChrF):** Evaluates grammatical and fluency aspects of the output text.
-
 ## Model Implementation
 
 We have implemented models using BART and T5 architectures for English and Russian respectively. The models are trained to optimize for the above evaluation metrics.
@@ -71,26 +59,25 @@ We have implemented models using BART and T5 architectures for English and Russi
 - Our models demonstrate a significant improvement in handling toxicity while retaining the content and grammatical correctness.
 - To evaluate model outputs: `python scripts/evaluate.py`
 
-## Setup and Installation
+### Evaluation Metrics
 
-```bash
-git clone https://github.com/your-repository/TextDetox.git
-cd TextDetox
-pip install -r requirements.txt
-```
+Our evaluation framework includes:
+- **Style Transfer Accuracy (STA):** Measures non-toxicity levels of transformed text.
+- **Content Preservation (SIM):** Assesses semantic similarity between original and transformed text.
+- **Character n-gram F-score (ChrF):** Evaluates grammatical and fluency aspects of the output text.
 
-## License
+## Acknowledgments
+
+### License
 
 This project is licensed under the MIT License - see the LICENSE file for details.
 
-## Authors
+### Authors
 
 Minsi Lai
 Chenxin Wang
 Jingyi Liao
 Fangge Liao
-
-## Acknowledgments
 
 University of British Columbia
 CLEF 2024 Organizers
