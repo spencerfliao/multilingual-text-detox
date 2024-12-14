@@ -17,7 +17,18 @@ We utilize the official ParaDetox datasets for English and Russian, comprising p
 - **English Dataset:** 17,769 training pairs, 1,975 validation pairs.
 - **Russian Dataset:** 11,090 training pairs, 1,116 validation pairs.
 
-## File Structure
+## Implementation
+
+### Setup
+
+To set up the project environment and install dependencies, run:
+
+```bash
+conda env create -f speech_sanitizers_env.yml
+conda activate textdetox
+```
+
+### File Structure
 
 - **data/**: Contains training, validation, and development datasets.
   - `en_train_input.json`, `en_valid_input.json`, `ru_train_input.json`, `ru_valid_input.json`: Input data for training and validation.
@@ -30,19 +41,6 @@ We utilize the official ParaDetox datasets for English and Russian, comprising p
   - `finetune_baseline.py`: Script for fine-tuning the baseline models.
   - `finetune_condBERT.py`, `gpt2.ipynb`: Scripts and notebooks for fine-tuning and evaluating CondBERT and GPT-2 models.
   - `evaluate.py`: Script to evaluate outputs against the gold standard using specified metrics.
-
-## Setup
-
-To set up the project environment and install dependencies, run:
-
-```bash
-conda env create -f speech_sanitizers_env.yml
-conda activate textdetox
-```
-
-## Model Implementation
-
-We have implemented models using BART and T5 architectures for English and Russian respectively. The models are trained to optimize for the above evaluation metrics.
 
 ### Baseline Model
 
