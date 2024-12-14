@@ -1,0 +1,25 @@
+name: speech_sanitizers_env
+channels:
+  - conda-forge
+  - pytorch
+  - huggingface
+dependencies:
+  - python=3.11
+  - pip
+  - ipykernel
+  - numpy
+  - pandas
+  - tqdm
+  - scipy
+  - scikit-learn
+  - pip:
+    - sacrebleu
+    - transformers
+    - sentence-transformers
+    - datasets
+    - wandb
+    - sentencepiece
+    - huggingface-cli
+    - tira
+    - torch
+
