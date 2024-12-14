@@ -1,11 +1,3 @@
-# Milestone 4
-
-## Progress Report
-The link to the progress report: [here](https://github.ubc.ca/wangcx12/COLX_531_speech_sanitizers/blob/main/Progress_report.pdf)
-
-## Models
-Model description, Reflection and Result & Error analysis are detailed in the updated progress report.
-
 ### Script
 - This week we implement [gpt2.ipynb](https://github.ubc.ca/wangcx12/COLX_531_speech_sanitizers/blob/main/scripts/gpt2.ipynb). 
 - We built fintuned GPT-2 models for both Russian and English detoxification task. 
