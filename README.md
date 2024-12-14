@@ -1,7 +1,7 @@
 # Multilingual Text Detoxification
 
-This project aims to address the challenge of online toxicity by transforming toxic comments into non-toxic ones while maintaining the original meaning. It involves the use of advanced natural language processing techniques and machine learning models to ensure content safety and inclusiveness in digital communication platforms.
-This repository contains the implementation of a multilingual text detoxification system developed as part of the TextDetox 2024 challenge. The system focuses on converting toxic text into non-toxic text while preserving the original content's meaning. The models handle multiple languages with a focus on English and Russian.
+- This project aims to address the challenge of online toxicity by transforming toxic comments into non-toxic ones while maintaining the original meaning. It involves the use of advanced natural language processing techniques and machine learning models to ensure content safety and inclusiveness in digital communication platforms.
+- This repository contains the implementation of a multilingual text detoxification system developed as part of the TextDetox 2024 challenge. The models handle multiple languages with a focus on English and Russian.
 
 ## Task Description
 
