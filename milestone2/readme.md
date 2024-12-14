@@ -1,11 +1,3 @@
-## Milestone 2
-
-### Result Submission
-We didn't figure out how to use tira to submit our result to the official leaderboard this week. Also explained in `Contributions` `Milestone 2` section in the progress report.
-
-### Progress Report
-The rendered progress report including all sections of milestone 1 and milestone 2 is included in `milestone 2`.
-
 ### Baseline
 We adapted the `backtranslation_baseline.py` from PAN at CLEF 2024 [here](https://github.com/pan-webis-de/pan-code/tree/master/clef24/text-detoxification/baselines/backtranslation-baseline).  
 - script of baseline is located at `scripts/backtranslation_baseline.py`, [here](https://github.ubc.ca/wangcx12/COLX_531_speech_sanitizers/blob/main/scripts/backtranslation_baseline.py)
