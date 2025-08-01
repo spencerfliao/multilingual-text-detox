@@ -22,6 +22,10 @@ Text detoxification involves:
 
 We use the official ParaDetox datasets for English and Russian. Each comment pair includes a toxic input and its corresponding detoxified version.
 
+- **English Dataset:** 17,769 training pairs, 1,975 validation pairs.
+- **Russian Dataset:** 11,090 training pairs, 1,116 validation pairs.
+
+
 | Language | Split          | Size   | Mean Length | Max | Min |
 |----------|----------------|--------|-------------|-----|-----|
 | English  | Train (toxic)  | 17,769 | 11.85       | 20  | 1   |
