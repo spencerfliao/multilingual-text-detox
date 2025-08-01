@@ -3,7 +3,7 @@
 
 This project addresses the challenge of online toxicity by transforming toxic comments into non-toxic ones while maintaining the original meaning, fluency, and grammatical correctness. It was developed as part of the [TextDetox 2024](https://github.com/pan-webis-de/pan-code/tree/master/clef24/text-detoxification) challenge. The system supports multilingual detoxification, focusing on English and Russian.
 
-Read the whole report here: 
+Read the whole report here: Progress_report.pdf
 <img width="595" height="841" alt="Progress_report" src="https://github.com/user-attachments/assets/175a03fe-d704-474e-99b4-cfcdccc09bee" />
 
 
